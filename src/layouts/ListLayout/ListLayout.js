@@ -16,7 +16,6 @@ class ListLayout extends React.Component {
     const response = await fetch(`${baseUrl}/users`);
     const data = await response.json();
 
-    console.log(data);
     this.setState({ list: data });
   };
 

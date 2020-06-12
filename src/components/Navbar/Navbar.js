@@ -17,21 +17,17 @@ const Navbar = () => {
         </div>
         <div className={styles.navItemWrapper}>
           <i className="fas fa-rss fa-2x"></i>
-          <a href="#" className={styles.navItem}>
-            FEED
-          </a>
+          <p className={styles.navItem}>POSTS</p>
         </div>
         <div className={styles.navItemWrapper}>
-          <i className="fas fa-user-friends fa-2x"></i>
-          <a href="#" className={styles.navItem}>
-            NETWORK
-          </a>
+          <Link to="/users" style={{ textDecoration: "none" }}>
+            <i className="fas fa-user-friends fa-2x"></i>
+            <p className={styles.navItem}>USERS</p>
+          </Link>
         </div>
         <div className={styles.navItemWrapper}>
           <i className="fas fa-suitcase fa-2x"></i>
-          <a href="#" className={styles.navItem}>
-            JOBS
-          </a>
+          <p className={styles.navItem}>TODOS</p>
         </div>
         <div className={styles.navItemWrapper}>
           <i className="far fa-comment-alt fa-2x"></i>

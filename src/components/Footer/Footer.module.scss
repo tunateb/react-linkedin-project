@@ -1,63 +1,67 @@
 @import "../../assets/main.scss";
 
 .footerContainer {
-  background-color: #eceeee;
   position: fixed;
+  background-color: #eceeee;
   bottom: 0;
   margin-top: 30px;
   width: 100%;
+  min-height: 100px;
   padding: 30px 0 40px 0;
-  border-top: $gray-border;
+  border-top: $grey-border;
   display: grid;
   grid-template-columns: 2fr 5fr 2fr 3fr;
-  
- 
 }
 
 .footerLogoWrapper {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .logo {
   width: 46px;
   height: 46px;
-  
 }
 
 .footerNav {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 10px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
 }
 
 .footerTitle {
-    text-align: left;
-    margin-bottom: 20px;;
-    font-size: $text-md;
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: $text-md;
 }
 
 .footerTitleBlue {
-    color: $blue;
+  color: $blue;
 }
 
 .footerLink {
-    list-style: none;
-    font-size: $text-sm;
-    text-align: left;
+  list-style: none;
+  font-size: $text-sm;
+  text-align: left;
 }
 
 .footerBtns {
-    display: flex;
-    flex-direction: column;
-    
+  display: flex;
+  flex-direction: column;
 
-    & Button {
-        margin: 5px 0;
-        width: 70%;
-        height: 30%;
-        text-align: left;
-    }
+  & Button {
+    margin: 5px 0;
+    width: 70%;
+    height: 30%;
+    text-align: left;
+  }
 }
 
-
+select {
+  width: 50%;
+  height: 30px;
+  border: none;
+  padding: 5px;
+  font-size: $text-md;
+  font-weight: $bold-font;
+}

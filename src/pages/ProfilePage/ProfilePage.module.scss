@@ -1,5 +1,10 @@
 @import "../../assets/main.scss";
 
+.content {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+}
+
 .profileContainer {
     max-width: 800px;
     margin: 30px auto;
@@ -28,12 +33,12 @@
 
     & h3 {
         font-size: $text-lg;
-        margin: 10px 0;
+        margin: 10px 20px;
     }
 
     & p {
         font-size: $text-md;
-        margin: 10px 0;
+        margin: 10px 20px;
     }
 }
 
@@ -46,4 +51,35 @@
     top: -30px;
     left: 10px;
     
+}
+
+.dashboard {
+    margin-top: 30px;
+    background-color: $white;
+    text-align: left;
+    padding: 10px 20px;
+   
+}
+
+.dashTitle {
+    font-size: $text-sm;
+    font-weight: $bold-font;
+    border-bottom: $grey-border;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.dashCount {
+    font-size: 40px;
+    color: $blue;
+    font-weight: $bold-font;
+    margin-top: 16px;
+}
+
+.dashText {
+    font-size: $text-md;
+    margin-bottom: 17px;
 }

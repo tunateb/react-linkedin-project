@@ -1,7 +1,12 @@
 @import "../../assets/main.scss";
 
+.content {
+    min-height: 100vh;
+}
+
 .container {
     max-width: 1200px;
     margin: auto;
     text-align: center;
+    min-height: 100vh;
 }

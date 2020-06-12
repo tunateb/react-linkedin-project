@@ -1,0 +1,24 @@
+@import "../../assets/main.scss";
+
+.todosCard {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: $white;
+  padding: 0 20px ;
+}
+
+.todoWrapper {
+    padding: 0 20px;
+    margin-right: 5rem;
+}
+
+.todoTitle {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.todoText {
+    font-size: $text-sm;
+    text-align: justify;
+}
+

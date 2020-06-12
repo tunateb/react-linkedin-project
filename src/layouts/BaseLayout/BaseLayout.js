@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import styles from "./BaseLayout.module.scss";
-import Footer from "../../components/Footer/Footer";
+import Footer from "../../components/Footer/Footer"
 
 const BaseLayout = ({ children }) => {
   return (

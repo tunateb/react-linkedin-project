@@ -18,8 +18,8 @@ function App() {
           <Switch>
             <Route exact path="/users" component={UsersPage} />
             <Route exact path="/" component={HomePage} />
-            <Route path="/posts" component={PostsPage} />
-            <Route path="/todos" component={TodosPage} />
+            <Route path="/users/:id/posts" component={PostsPage} />
+            <Route path="/users/:id/todos" component={TodosPage} />
             <Route path="/users/:id" component={ProfilePage} />
           </Switch>
         </BaseLayout>

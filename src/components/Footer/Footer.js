@@ -40,6 +40,10 @@ const Footer = () => {
       </div>
       <div>
         <h6 className={styles.footerTitle}>Language</h6>
+        <select name="language" id="language">
+          <option value="English">ENGLISH</option>
+          <option value="English">TURKISH</option>
+        </select>
       </div>
     </div>
   );
