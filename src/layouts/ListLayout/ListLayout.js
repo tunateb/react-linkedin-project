@@ -21,9 +21,8 @@ class ListLayout extends React.Component {
   };
 
   goToProfile = (id) => {
-    console.log(id);
-    this.props.history.push(id);
-    console.log(this.props.history);
+    const pathname = this.props.history.location.pathname;
+    this.props.history.push(`${pathname}/${id}`);
   };
 
   render() {
@@ -36,6 +35,7 @@ class ListLayout extends React.Component {
             imgAlt="avatar"
             userName={item.name}
             userEmail={item.email}
+            buttonText={this.props.buttonText}
             onBtnClick={() => {
               this.goToProfile(item.id);
             }}

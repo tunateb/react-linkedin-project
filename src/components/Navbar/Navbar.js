@@ -1,16 +1,19 @@
 import React from "react";
 import styles from "./Navbar.module.scss";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navLinks}>
         <div className={styles.logoWrapper}>
-          <img
-            src={require("../../img/logo.png")}
-            className={styles.logo}
-            alt="logo"
-          />
+          <Link to="/">
+            <img
+              src={require("../../img/logo.png")}
+              className={styles.logo}
+              alt="logo"
+            />
+          </Link>
         </div>
         <div className={styles.navItemWrapper}>
           <i className="fas fa-rss fa-2x"></i>

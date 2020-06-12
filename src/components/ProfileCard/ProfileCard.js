@@ -4,7 +4,7 @@ import Card from "../Card/Card";
 import CardImg from "../CardImg/CardImg";
 import Button from "../Button/Button";
 
-const ProfileCard = ({ imgSrc, imgAlt, userName, userEmail, onBtnClick }) => {
+const ProfileCard = ({ imgSrc, imgAlt, userName, userEmail, onBtnClick, buttonText}) => {
   return (
     <Card>
       <CardImg imgSrc={imgSrc} imgAlt={imgAlt} />
@@ -12,7 +12,7 @@ const ProfileCard = ({ imgSrc, imgAlt, userName, userEmail, onBtnClick }) => {
         <h3 className={styles.userName}>{userName}</h3>
         <p className={styles.userEmail}>{userEmail}</p>
       </div>
-      <Button onBtnClick={onBtnClick} />
+      <Button onBtnClick={onBtnClick} buttonText={buttonText}/>
     </Card>
   );
 };
