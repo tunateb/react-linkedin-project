@@ -1,0 +1,95 @@
+@import "../../assets/main.scss";
+
+.navbar {
+  width: 100vw;
+  background: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $base-text-color;
+  font-size: $text-md;
+  line-height: 11px;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: $gray-border;
+  text-align: center;
+}
+
+.logoWrapper {
+  border-right: $gray-border;
+}
+
+.logo {
+  width: 46px;
+  height: 46px;
+  margin: 17px 44px 17px 40px;
+}
+
+.navItemWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 18px 20px;
+}
+
+.navItem {
+  text-decoration: none;
+  color: $base-text-color;
+  margin-top: 10px;
+}
+
+.searchBarWrapper {
+  border-right: $gray-border;
+  //   width: 367px;
+}
+
+.searchBar {
+  border: none;
+  font-size: $text-lg;
+  font-weight: 300;
+  padding: 30px;
+}
+
+.profileOwner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navAvatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+.navProfileName {
+  display: inline-block;
+  padding: 10px;
+}
+
+.navProfileNameSpan {
+  font-weight: 300;
+}
+
+.navProfileViewCount {
+  font-weight: 300;
+  padding: 10px;
+}
+
+.navSubmenu {
+  text-align: center;
+  border-right: $gray-border;
+  border-left: $gray-border;
+  margin-right: 40px;
+  padding: 18px 23px;
+}
+
+.navSubmenuTitle {
+  margin-top: 21px;
+}
