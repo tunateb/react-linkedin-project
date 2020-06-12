@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.scss";
 
-
 import UsersPage from "../src/pages/UsersPage/UsersPage";
 import HomePage from "../src/pages/HomePage/HomePage";
 import PostsPage from "../src/pages/PostsPage/PostsPage";
@@ -13,17 +12,15 @@ import BaseLayout from "./layouts/BaseLayout/BaseLayout";
 function App() {
   return (
     <Router>
-      
-        <BaseLayout>
-          <Switch>
-            <Route exact path="/users" component={UsersPage} />
-            <Route exact path="/" component={HomePage} />
-            <Route path="/users/:id/posts" component={PostsPage} />
-            <Route path="/users/:id/todos" component={TodosPage} />
-            <Route path="/users/:id" component={ProfilePage} />
-          </Switch>
-        </BaseLayout>
-      
+      <BaseLayout>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/users" component={UsersPage} />
+          <Route path="/users/:id/posts" component={PostsPage} />
+          <Route path="/users/:id/todos" component={TodosPage} />
+          <Route path="/users/:id" component={ProfilePage} />
+        </Switch>
+      </BaseLayout>
     </Router>
   );
 }

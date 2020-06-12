@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./TodosPage.module.scss";
 import TodoListLayout from "../../layouts/TodoListLayout/TodoListLayout";
 
-const TodosPage = () => {
+const TodosPage = ({history}) => {
   return (
     <div className={styles.todoContent}>
       <div className={styles.todosSearchCard}>
@@ -16,7 +16,7 @@ const TodosPage = () => {
 
       <div className={styles.todosSeperator}>TODOS</div>
 
-      <TodoListLayout />
+      <TodoListLayout history={history}/>
     </div>
   );
 };
