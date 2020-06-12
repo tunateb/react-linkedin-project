@@ -1,20 +1,16 @@
 @import "../../assets/main.scss";
 
 .navbar {
+  @include flex-between;
   width: 100%;
   background: $white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   color: $base-text-color;
   font-size: $text-md;
   line-height: 11px;
 }
 
 .navLinks {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   border-right: $grey-border;
   text-align: center;
 }
@@ -30,9 +26,7 @@
 }
 
 .navItemWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   flex-direction: column;
   margin: 18px 20px;
 }
@@ -45,7 +39,6 @@
 
 .searchBarWrapper {
   border-right: $grey-border;
-  //   width: 367px;
 }
 
 .searchBar {
@@ -56,9 +49,7 @@
 }
 
 .profileOwner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-between;
 }
 
 .navAvatar {
@@ -74,11 +65,11 @@
 }
 
 .navProfileNameSpan {
-  font-weight: 300;
+  font-weight: $light-font;
 }
 
 .navProfileViewCount {
-  font-weight: 300;
+  font-weight: $light-font;
   padding: 10px;
 }
 

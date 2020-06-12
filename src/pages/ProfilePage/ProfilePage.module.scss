@@ -1,85 +1,137 @@
 @import "../../assets/main.scss";
 
 .content {
-    display: grid;
-    grid-template-columns: 9fr 3fr;
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  grid-gap: 59px;
+  text-align: left;
 }
 
 .profileContainer {
-    max-width: 800px;
-    margin: 30px auto;
-    background-color: $white;
-    height: 300px;
+  max-width: 850px;
+  margin: 30px auto;
+  background-color: $white;
+  height: 300px;
 }
 
 .headerImg {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
 
-
-
 .profileWrapper {
-    display: grid;
-    grid-template-columns: 3fr 9fr;
-    position: relative;
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  position: relative;
 }
 
 .profileInfo {
-    text-align: left;
-    position: absolute;
-    left: 180px;
+  position: absolute;
+  left: 180px;
 
-    & h3 {
-        font-size: $text-lg;
-        margin: 10px 20px;
-    }
+  & h3 {
+    font-size: $text-lg;
+    margin: 10px 20px;
+  }
 
-    & p {
-        font-size: $text-md;
-        margin: 10px 20px;
-    }
+  & p {
+    font-size: $text-md;
+    margin: 10px 20px;
+  }
 }
 
 .profileAvatar {
-    width: 150px;
-    height: 150px;
-    border: 8px solid $white;
-    border-radius: 50%;
-    position: absolute;
-    top: -30px;
-    left: 10px;
-    
-}
-
-.dashboard {
-    margin-top: 30px;
-    background-color: $white;
-    text-align: left;
-    padding: 10px 20px;
-   
+  width: 150px;
+  height: 150px;
+  border: 8px solid $white;
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+  left: 10px;
 }
 
 .dashTitle {
-    font-size: $text-sm;
-    font-weight: $bold-font;
-    border-bottom: $grey-border;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    margin: 10px 0;
+  @include flex-between;
+  font-size: $text-sm;
+  font-weight: $bold-font;
+  border-bottom: $grey-border;
+  padding: 10px 0;
+  margin: 10px 0;
 }
 
 .dashCount {
-    font-size: 40px;
-    color: $blue;
-    font-weight: $bold-font;
-    margin-top: 16px;
+  font-size: 40px;
+  color: $blue;
+  font-weight: $bold-font;
+  margin-top: 16px;
+}
+
+.dashLink {
+  color: $blue;
 }
 
 .dashText {
-    font-size: $text-md;
-    margin-bottom: 17px;
+  font-size: $text-md;
+  margin-bottom: 17px;
+}
+
+.aboutSection {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 15px;
+  background-color: $white;
+
+  & a {
+    font-size: $text-sm;
+    color: $blue;
+    text-decoration: none;
+  }
+}
+
+.aboutTitle {
+  font-size: $text-lg;
+  font-weight: $bold-font;
+  margin: 10px 0;
+}
+
+.aboutText {
+  font-size: $text-md;
+  margin: 10px 0;
+}
+
+.projectSection {
+  max-width: 850px;
+  margin: auto;
+  background-color: $white;
+  padding: 20px;
+}
+
+.projectSectionTitle {
+  font-size: $text-lg;
+  font-weight: $bold-font;
+  margin-bottom: 15px;
+}
+
+.projectShowcase {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.projectImg {
+  width: 250px;
+  height: 160px;
+  margin-bottom: 15px;
+}
+
+.projectTitle {
+  font-size: $text-md;
+  font-weight: $bold-font;
+  margin-bottom: 5px;
+}
+
+.projectText {
+  font-size: $text-sm;
 }

@@ -21,7 +21,7 @@ class TodoListLayout extends React.Component {
   };
 
   render() {
-    return this.state.todos.map((todo, index) => (
+    return this.state.todos.map((todo) => (
       <TodoCard
         todoTitle={todo.title}
         todoText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat dictum euismod. 

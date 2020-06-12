@@ -1,0 +1,44 @@
+@import "../../assets/main.scss";
+
+.visitorListTitle {
+  font-size: $text-sm;
+  font-weight: $bold-font;
+  border-bottom: $grey-border;
+  padding: 20px 0;
+  @include flex-between;
+}
+
+.visitorLink {
+  color: $blue;
+  text-decoration: none;
+  font-size: $text-sm;
+}
+
+.visitorCard {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 15px;
+}
+
+.visitorImg {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  margin: 15px 0;
+}
+
+.visitorTitle {
+  font-size: $text-md;
+  font-weight: $bold-font;
+  margin-bottom: 5px;
+}
+
+.visitorDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.visitorCompany {
+  font-size: $text-sm;
+}

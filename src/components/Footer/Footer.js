@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.scss";
 import Button from "../Button/Button";
+import FooterLink from "./FooterLink/FooterLink";
 
 const Footer = () => {
   return (
@@ -19,17 +20,17 @@ const Footer = () => {
       <div className={styles.footerNavWrapper}>
         <h6 className={styles.footerTitle}>Navigation</h6>
         <ul className={styles.footerNav}>
-          <li className={styles.footerLink}>About</li>
-          <li className={styles.footerLink}>Careers</li>
-          <li className={styles.footerLink}>Advertising</li>
-          <li className={styles.footerLink}>Small Business</li>
-          <li className={styles.footerLink}>Talent Solutions</li>
-          <li className={styles.footerLink}>Marketing Solutions</li>
-          <li className={styles.footerLink}>Sales Solutions</li>
-          <li className={styles.footerLink}>Safety Center</li>
-          <li className={styles.footerLink}>Community Guidelines</li>
-          <li className={styles.footerLink}>Privacy & Terms</li>
-          <li className={styles.footerLink}>Mobile App</li>
+          <FooterLink linkText="About" />
+          <FooterLink linkText="Careers" />
+          <FooterLink linkText="Advertising" />
+          <FooterLink linkText="Small Business" />
+          <FooterLink linkText="Talent Solutions" />
+          <FooterLink linkText="Marketing Solutions" />
+          <FooterLink linkText="Sales Solutions" />
+          <FooterLink linkText="Safety Center" />
+          <FooterLink linkText="Community Guidelines" />
+          <FooterLink linkText="Privacy & Terms" />
+          <FooterLink linkText="Mobile App" />
         </ul>
       </div>
 
@@ -42,7 +43,7 @@ const Footer = () => {
         <h6 className={styles.footerTitle}>Language</h6>
         <select name="language" id="language">
           <option value="English">ENGLISH</option>
-          <option value="English">TURKISH</option>
+          <option value="Turkish">TURKISH</option>
         </select>
       </div>
     </div>

@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./ProfilePage.module.scss";
 import Button from "../../components/Button/Button";
+import DashboardCard from "../../components/DashboardCard/DashboardCard";
+import VisitorsCard from "../../components/VisitorsCard/VisitorsCard";
 
 class ProfilePage extends React.Component {
   state = {
@@ -57,20 +59,59 @@ class ProfilePage extends React.Component {
                 <p>Website: {this.state.profileDetails.website}</p>
 
                 <Button buttonText="TODOS" onBtnClick={this.goTodos} />
-                <Button
-                  buttonText="POSTS"
-                  onBtnClick={this.goPosts}
+                <Button buttonText="POSTS" onBtnClick={this.goPosts} />
+              </div>
+            </div>
+          </div>
+          <div className={styles.aboutSection}>
+            <h3 className={styles.aboutTitle}>About</h3>
+            <p className={styles.aboutText}>
+              Aliquam rhoncus, metus consequat tempor volutpat, nibh justo
+              consectetur nibh, sed condimentum enim arcu blandit dui. Nam quis
+              eros quis orci elementum cursus. Ut lobortis consequat consequat.
+              Etiam pretium lorem sed ante faucibus, eget tempor elit mattis.
+              Cras at maximus purus.
+            </p>
+            <a href="#">SEE MORE</a>
+          </div>
+          <div className={styles.projectSection}>
+            <h3 className={styles.projectSectionTitle}>Projects</h3>
+            <div className={styles.projectShowcase}>
+              <div>
+                <img
+                  src="https://unsplash.it/200/201"
+                  className={styles.projectImg}
                 />
+                <h3 className={styles.projectTitle}>Project Title</h3>
+                <p className={styles.projectText}>Project Text</p>
+              </div>
+              <div>
+                <img
+                  src="https://unsplash.it/200/200"
+                  className={styles.projectImg}
+                />
+                <h3 className={styles.projectTitle}>Project Title</h3>
+                <p className={styles.projectText}>Project Text</p>
+              </div>
+              <div>
+                <img
+                  src="https://unsplash.it/200/199"
+                  className={styles.projectImg}
+                />
+                <h3 className={styles.projectTitle}>Project Title</h3>
+                <p className={styles.projectText}>Project Text</p>
               </div>
             </div>
           </div>
         </section>
         <section className={styles.sideContent}>
-          <div className={styles.dashboard}>
+          <DashboardCard>
             <div className={styles.dashTitle}>
               <p>YOUR DASHBOARD</p>
 
-              <a href="#">GO TO STATS</a>
+              <a href="#" className={styles.dashLink}>
+                GO TO STATS
+              </a>
             </div>
 
             <p className={styles.dashCount}>
@@ -85,7 +126,10 @@ class ProfilePage extends React.Component {
               {Math.floor(Math.random() * 100)}
             </p>
             <p className={styles.dashText}>search apperances</p>
-          </div>
+          </DashboardCard>
+          <DashboardCard>
+            <VisitorsCard />
+          </DashboardCard>
         </section>
       </div>
     );
